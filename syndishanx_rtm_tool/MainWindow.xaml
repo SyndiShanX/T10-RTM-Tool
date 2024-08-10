@@ -1,0 +1,69 @@
+﻿<Window x:Class="syndishanx_rtm_tool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:syndishanx_rtm_tool"
+        mc:Ignorable="d"
+        Title="SyndiShanX's RTM Tool" Height="520" Width="310"
+        Background="#404040">
+
+    <Window.Resources>
+        <local:DvarList x:Key="Dvars" />
+    </Window.Resources>
+
+    <Grid Height="460" Width="200">
+        <Label Content="PS4 IP"              Margin="-45,0,200,435"   Foreground="White"/>
+        <TextBox x:Name="PS4_IP"             Margin="5,5,5,435"       Text="{Binding ConsoleIpAddress}"/>
+
+        <Button x:Name="Connect_Button"      Margin="5,30,5,410"      Content="Connect"                    Click="Connect_Button_Click"           Background="#c0c0c0"></Button>
+        <Button x:Name="Attach_Button"       Margin="5,55,5,385"      Content="Attach"                     Click="Attach_Button_Click"            Background="#c0c0c0"></Button>
+
+        <Button x:Name="Start_Lobby_Button"  Margin="5,90,5,350"      Content="Create Game"                Click="Start_Lobby_Button_Click"       Background="#c0c0c0"></Button>
+        <Button x:Name="Join_Party_Button"   Margin="5,115,5,325"     Content="Force Join Game"            Click="Join_Party_Button_Click"        Background="#c0c0c0"></Button>
+
+        <Button x:Name="Fix_Loadouts_Button" Margin="5,140,5,300"     Content="Fix Loadouts"               Click="Fix_Loadouts_Button_Click"      Background="#c0c0c0"></Button>
+        <Button x:Name="Fullbright_Button"   Margin="5,165,5,275"     Content="Fullbright"                 Click="Fullbright_Button_Click"        Background="#c0c0c0"></Button>
+
+        <Label Content=" CBuf"               Margin="-40,195,200,240" Foreground="White"/>
+        <TextBox x:Name="CBUF_Command"       Margin="5,200,5,240"     Text="{Binding CommandBuffer}"></TextBox>
+        <Button x:Name="Send_Command_Button" Margin="5,225,5,215"     Content="Send CBuf Command"          Click="Send_Command_Button_Click"      Background="#c0c0c0"></Button>
+
+        <Label Content=" Dvar"               Margin="-40,255,200,180" Foreground="White"/>
+        <ComboBox x:Name="Combo_Box_Dvar"    Margin="5,260,5,180"     ItemsSource="{StaticResource Dvars}" SelectedValue="{Binding SelectedDvar}" SelectedValuePath="Value" DisplayMemberPath="Key" Grid.RowSpan="2">
+            <ComboBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel />
+                </ItemsPanelTemplate>
+            </ComboBox.ItemsPanel>
+        </ComboBox>
+        <Label Content="Value"               Margin="-40,280,200,155" Foreground="White"                RenderTransformOrigin="0.486,0.439"/>
+        <TextBox x:Name="Dvar_Value"         Margin="5,285,5,155"     Text="{Binding SelectedDvarValue}"  Grid.Row="1"></TextBox>
+        <Button x:Name="Call_Dvar_Button"    Margin="5,310,5,130"     Content="Call Dvar"                 Click="Call_Dvar_Button_Click"          Background="#c0c0c0"     Grid.Row="1"></Button>
+
+        <ComboBox x:Name="Combo_Box_Maps"    Margin="5,345,5,95" Grid.Row="1">
+            <ComboBoxItem Content="Protocol" Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Skyline"  Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Scud"     Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Babylon"  Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Gala"     Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Stakeout" Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Pit"      Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Rewind"   Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Derelict" Background="#c0c0c0"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="Set_Map_Button"      Margin="5,370,5,70" Content="Set Map"                       Click="Set_Map_Button_Click"            Background="#c0c0c0"     Grid.Row="1"></Button>
+
+        <ComboBox x:Name="Combo_Box_Gamemodes"          Margin="5,405,5,35" Grid.Row="1">
+            <ComboBoxItem Content="Team Deathmatch"     Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Domination"          Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Hardpoint"           Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Gunfight"            Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Prisoner Rescue"     Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Kill Order"          Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Bounty"              Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="All or Nothing"      Background="#c0c0c0"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="Set_Gamemode_Button"            Margin="5,430,5,10" Content="Set Gamemode"                  Click="Set_Gamemode_Button_Click"       Background="#c0c0c0"     Grid.Row="1"></Button>
+    </Grid>
+</Window>

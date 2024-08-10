@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SuperAwesomeBO6Tool
+﻿namespace syndishanx_rtm_tool
 {
     class DvarList : Dictionary<string, string>
     {

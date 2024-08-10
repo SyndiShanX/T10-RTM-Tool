@@ -1,5 +1,9 @@
-# Super Awesome BO6 Tool!
+# SyndiShanX's RTM Tool
 
-Oh yeaahhhh, it's awesome!!!
+Based on [Tustin's](https://github.com/Tustin) Tool
 
-![image](https://github.com/user-attachments/assets/02e70374-0bb3-4795-b620-7d0ccacab982)
+## Changes made:
+ - Cleaner UI and Code
+ - Added Fix Loadouts Button
+ - Changed Maps to Actual Names instead of Internal Strings
+ - Added Gamemode Selection
