@@ -54,15 +54,24 @@
         </ComboBox>
         <Button x:Name="Set_Map_Button"      Margin="5,370,5,70" Content="Set Map"                       Click="Set_Map_Button_Click"            Background="#c0c0c0"     Grid.Row="1"></Button>
 
-        <ComboBox x:Name="Combo_Box_Gamemodes"          Margin="5,405,5,35" Grid.Row="1">
-            <ComboBoxItem Content="Team Deathmatch"     Background="#c0c0c0"></ComboBoxItem>
-            <ComboBoxItem Content="Domination"          Background="#c0c0c0"></ComboBoxItem>
-            <ComboBoxItem Content="Hardpoint"           Background="#c0c0c0"></ComboBoxItem>
-            <ComboBoxItem Content="Gunfight"            Background="#c0c0c0"></ComboBoxItem>
-            <ComboBoxItem Content="Prisoner Rescue"     Background="#c0c0c0"></ComboBoxItem>
-            <ComboBoxItem Content="Kill Order"          Background="#c0c0c0"></ComboBoxItem>
-            <ComboBoxItem Content="Bounty"              Background="#c0c0c0"></ComboBoxItem>
-            <ComboBoxItem Content="All or Nothing"      Background="#c0c0c0"></ComboBoxItem>
+        <ComboBox x:Name="Combo_Box_Gamemodes"               Margin="5,405,5,35" Grid.Row="1">
+            <ComboBoxItem Content="Team Deathmatch"          Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Domination"               Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Hardpoint"                Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Gunfight"                 Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Prisoner Rescue"          Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Kill Order"               Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Bounty"                   Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="All or Nothing"           Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Face Off Kill Order"      Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Face Off Kill Confirmed"  Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Face Off Team Deathmatch" Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Sharpshooter"             Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Training Course"          Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="Hardcore Control"         Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="CDL Control"              Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="CDL Hardpoint"            Background="#c0c0c0"></ComboBoxItem>
+            <ComboBoxItem Content="CDL Search and Destroy"   Background="#c0c0c0"></ComboBoxItem>
         </ComboBox>
         <Button x:Name="Set_Gamemode_Button"            Margin="5,430,5,10" Content="Set Gamemode"                  Click="Set_Gamemode_Button_Click"       Background="#c0c0c0"     Grid.Row="1"></Button>
     </Grid>

@@ -296,6 +296,42 @@ namespace syndishanx_rtm_tool
             {
                 internalMode = "aon";
             }
+            else if (namedMode == "Face Off Kill Order")
+            {
+                internalMode = "fo_hvt";
+            }
+            else if (namedMode == "Face Off Kill Confirmed")
+            {
+                internalMode = "fo_conf";
+            }
+            else if (namedMode == "Face Off Team Deathmatch")
+            {
+                internalMode = "fo_war";
+            }
+            else if (namedMode == "Sharpshooter")
+            {
+                internalMode = "sharp";
+            }
+            else if (namedMode == "Training Course")
+            {
+                internalMode = "training_course";
+            }
+            else if (namedMode == "Hardcore Control")
+            {
+                internalMode = "hc_control";
+            }
+            else if (namedMode == "CDL Control")
+            {
+                internalMode = "lp_control";
+            }
+            else if (namedMode == "CDL Hardpoint")
+            {
+                internalMode = "lp_koth";
+            }
+            else if (namedMode == "CDL Search and Destroy")
+            {
+                internalMode = "lp_sd";
+            }
 
             if (internalMode != "")
             {
